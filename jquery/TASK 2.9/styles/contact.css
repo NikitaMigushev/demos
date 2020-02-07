@@ -1,0 +1,68 @@
+section.contactForm h1 {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.contactForm input {
+  margin: 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contactForm {
+  margin: auto;
+  max-width: 400px;
+}
+
+.contactForm form>* {
+  padding: 1em;
+}
+
+.contactForm form label {
+  display: block;
+}
+
+.contactForm form p {
+  margin: 0;
+}
+
+.contactForm form {
+  display: grid;
+}
+
+.contactForm form .full {
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.contactForm form textarea {
+  height: 200px;
+  border: none;
+}
+
+.contactForm form button {
+  height: 50px;
+  background-color: #26a2c9;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  border: none;
+}
+
+.contactForm form button:hover {
+  background-color: #6fc9e6;
+}
+
+.contactForm form {
+  margin-bottom: 30px;
+}
+
+/*Data vadilation*/
+
+.errorForm {
+  color: rgb(250, 96, 212);
+  font-weight: bold;
+  display: none;
+}

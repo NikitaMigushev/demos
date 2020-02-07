@@ -1,0 +1,20 @@
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "title title title"
+  "main main main"
+}
+
+.headLine {
+  grid-area: title;
+}
+
+article.main-story {
+  grid-area: main;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

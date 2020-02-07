@@ -1,0 +1,71 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Open Sans',
+sans-serif;
+}
+
+.page-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #ECECEC;
+    margin-top: 30px;
+}
+
+.headline {
+    margin-left: 1.8em;
+    padding-top: 20px;
+}
+
+ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+nav {
+    background: #144c85;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+.button {
+    background: rgb(97, 165, 211);
+    background: linear-gradient(171deg, rgba(97, 165, 211, 1) 0%, rgba(63, 121, 162, 1) 100%);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.button:hover {
+    background: rgb(186, 219, 241);
+    background: linear-gradient(171deg, rgba(186, 219, 241, 1) 0%, rgba(102, 149, 182, 1) 100%);
+}
+
+#page {
+    padding: 0px 20px 20px 20px;
+}
+
+
+

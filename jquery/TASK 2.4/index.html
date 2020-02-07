@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/Jqueryui/jquery-ui.css">
+    <script src="libs/Jquery/Jquery.js"></script>
+    <sript src="libs/Jqueryui/external/jquery/jquery.js"></sript>
+    <script src="libs/Jqueryui/jquery-ui.js"></script>
+    <script src="javascript/code.js"></script>
+    <title>Task 2.4</title>
+</head>
+
+<body>
+    <div class="page-wrap">
+
+        <div class="inner-wrap">
+            <h1> One-Way Airlines: Let's make a reservation</h1>
+            <div class="border-line"></div>
+            <form>
+                <table>
+                    <tr class="mainForm">
+                        <td class="fieldName"><label>Pick a departure date:</label></td>
+                        <td><input type="text" name="email" value="" id="date"></td>
+                    </tr>
+                    <tr class="mainForm">
+                        <td class="fieldName"><label>Find an airport:</label></td>
+                        <td><input type="text" name="phone" value=""></td>
+                    </tr>
+
+                    <tr class="mainForm">
+                        <td class="fieldName"><label>Meal options:</label></td>
+                        <td>
+                        <div class="selectField">
+                        <select id="mealOptions">
+                            <option>No meal</option>
+                            <option>Standard meal</option>
+                            <option>Vegetarian meal</option>
+                        </select></div></td>
+                    </tr>
+                    <tr class="mainForm">
+                        <td class="fieldName"><label>Number of bags to check:</label></td>
+                        <td>
+                            <div class="radioItems"><label for="radio-1">0</label>
+                                <input type="radio" name="radio-1" id="radio-1" class="radio">
+                                <label for="radio-2">1</label>
+                                <input type="radio" name="radio-1" id="radio-2" class="radio">
+                                <label for="radio-3">2</label>
+                                <input type="radio" name="radio-1" id="radio-3" class="radio">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                       
+                    <td class="fieldName"><label>Type of seat you'd like: </label></td>
+                    <td><div class="checkboxItems"><label for="checkbox-1">Aisle</label>
+                    <input type="checkbox" name="checkbox-1" id="checkbox-1" class="checkbox">
+                    <label for="checkbox-2">Window</label>
+                    <input type="checkbox" name="checkbox-2" id="checkbox-2" class="checkbox">
+                    <label for="checkbox-3">Exit Row</label>
+                    <input type="checkbox" name="checkbox-3" id="checkbox-3" class="checkbox">
+                    <label for="checkbox-4">Any seat</label>
+                    <input type="checkbox" name="checkbox-4" id="checkbox-4" class="checkbox"></div></td>
+                    </tr>
+                </table>
+                <p>
+                    <button class="full" id="openDlg" type="button">Continue reservation process</button>
+                </p>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background: #eaebed;
+    color: #798991;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Viga',
+        sans-serif;
+    color: #555f64;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Center the main form */
+.page-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 450px;
+    background: #FEFBF6;
+}
+
+/* Adjust size of the inner wrap */
+
+.inner-wrap {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+
+/*Border line under the headline*/
+div.border-line {
+    position: relative;
+    bottom: 14px;
+    right: 12px;
+    border-bottom: 3px solid rgb(173, 171, 168);
+    width: 95%;
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+/* Move Radio items to the right */
+
+div.radioItems {
+    margin-left: 10px;
+}
+
+/* Style input fields */
+
+input {
+    margin: 0;
+    border-radius: 5px;
+    padding: 0.5em;
+    border: 1px solid lightgrey;
+    margin-left: 10px;
+}
+/* Align Field names to the right */
+
+td.fieldName {
+    text-align: right;
+}
+
+/*Adjust margin between rows in the form */
+
+tr.mainForm {
+    height: 3em;
+}
+
+/*Hide Done button in the calendar */
+
+button.ui-datepicker-close {
+    display: none;
+}
+
+/*Make Today button bold in the caledar */
+
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+    color: black;
+    font-weight: 600;
+}
+
+/*Adjust margin of the select field*/
+
+div.selectField {
+    margin-left: 10px;
+}
+
+/*Adjust margin of the checkbox field*/
+
+div.checkboxItems {
+   margin-left: 10px;
+}
+
+/*Adjust margin of the button*/
+
+button {
+    margin-left: 220px;
+}
+
+
+

@@ -1,0 +1,39 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+li {
+    display: block;
+    list-style-type: none;
+    width: 50%;
+    height: 3em;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.purple {
+    background-color: purple;
+}

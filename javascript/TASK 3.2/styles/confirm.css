@@ -1,0 +1,49 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 20% 50%;    
+    grid-gap: 0px;
+    padding-left: 100px;
+    grid-template-areas:
+        "headline summery"
+        "confirm summery";
+}
+
+.checkoutformHeadline {
+    grid-area: headline;
+}
+
+.confirmSection {
+    grid-area: confirm;
+}
+
+section.contacts {
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+}
+
+section.delivery {
+    border-bottom: 1px solid lightgrey;
+}
+
+.returnLink a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.returnLink a:hover {
+    color: orange;
+}
+
+p.returnLink {
+    line-height: 100px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+

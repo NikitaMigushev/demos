@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Styles/normalize.css" />
+    <link rel="stylesheet" href="Libs/Jqueryui/jquery-ui.css" />
+    <link rel="stylesheet" href="Styles/phase2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,800i&display=swap" rel="stylesheet" />
+    <title>Task 3.7</title>
+</head>
+
+<body>
+    <div class="page-wrap">
+        <div class="inner-wrap">
+            <h1 ahref="">Sign up</h1>
+            <div class="phase flexcontainer">
+                <div>Your info</div>
+                <div>Your preferences</div>
+            </div>
+            <form action="phase2.html" method="GET" id="registration">
+                <!-- Hidden fields from stage 1 registration -->
+                <input type="hidden" id="username" required />
+                <input type="hidden" id="email" required />
+                <input type="hidden" id="phone" required />
+                <input type="hidden" id="address" required />
+                <input type="hidden" id="city" required />
+                <input type="hidden" id="state" required />
+                <input type="hidden" id="zip" required />
+                <h3>Food allergies</h3>
+                <ul>
+                    <li>
+                        <textarea name="" id="allergies" cols="30" rows="10" required></textarea>
+                    </li>
+                </ul>
+
+                <h3>Frequency</h3>
+                <ul>
+                    <li>
+                        <input type="radio" value="Weekly" id="weekly" name="frequency" checked>
+                        <label for="weekly">Weekly</label>
+                    </li>
+                    <li>
+                        <input type="radio" value="Biweekly" id="biweekly" name="frequency">
+                        <label for="biweekly">Biweekly</label>
+
+                    </li>
+                    <li>
+                        <input type="radio" value="Monthly" id="monthly" name="frequency">
+                        <label for="weekly">Monthly</label>
+                    </li>
+                </ul>
+
+                <h3>Package Size</h3>
+                <ul>
+                    <li>
+                        <input type="radio" value="Taste test" id="taste" name="package" checked>
+                        <label for="taste">Taste test</label>
+                    </li>
+                    <li>
+                        <input type="radio" value="Healthy Highlight" id="healthy" name="package">
+                        <label for="healthy">Healthy Highlight</label>
+
+                    </li>
+                    <li>
+                        <input type="radio" value="Full plate" id="full" name="package">
+                        <label for="full">Full plate</label>
+                    </li>
+                </ul>
+                <button type="submit">Submit</button>
+
+            </form>
+            <div id="accountTemplate"></div>
+        </div>
+    </div>
+    <script src="Libs/Jquery/Jquery.js"></script>
+    <sript src="Libs/Jqueryui/external/jquery/jquery.js"></sript>
+    <script src="Libs/Jqueryui/jquery-ui.js"></script>
+    <script src="Javascript/registration.js"></script>
+</body>
+
+</html>

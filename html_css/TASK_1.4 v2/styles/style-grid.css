@@ -1,0 +1,74 @@
+@supports (grid-area: auto) {
+  .inner-wrap {
+    display: grid;
+    grid-gap: 1em;
+  }
+
+  @media screen and (min-width: 768px) {
+    .inner-wrap {
+      grid-template-columns: repeat(2, 385px);
+      grid-template-rows: repeat(4, 200px);
+    }
+
+    #firstCard {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    #secondCard {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    #thirdCard {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    #fourthCard {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    #fifthCard {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .page-wrap {
+      width: 120em;
+    }
+
+    .inner-wrap {
+      grid-template-columns: repeat(3, 385px);
+      grid-template-rows: repeat(4, 200px);
+    }
+
+    #firstCard {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    #secondCard {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    #thirdCard {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    #fourthCard {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    #fifthCard {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+  }
+}

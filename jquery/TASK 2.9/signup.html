@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/Jqueryui/jquery-ui.css">
+  <title>The Bikes. Online Shopping for the Right Bikes</title>
+  <script src="libs/Jquery/Jquery.js"></script>
+  <sript src="libs/Jqueryui/external/jquery/jquery.js"></sript>
+  <script src="libs/Jqueryui/jquery-ui.js"></script>
+  <script src="javascript/datepicker.js"></script>
+  <script src="javascript/dialogbox.js"></script>
+  <script src="javascript/autocomplete.js"></script>
+  <script src="javascript/validationcheck.js"></script>
+</head>
+
+<body>
+  <div class="page-wrap">
+
+    <div class="inner-wrap">
+      <header>
+        <div class="flexcontainer logoAndTel">
+          <a href="index.html"><img class="logo" src="images/logoshort.svg" /></a>
+          <h3 class="tel">+7 (495) 555-55-55</h3>
+        </div>
+        <form class="search-form">
+          <input type="text" name="" value="" placeholder="Search for bikes" id="searchbox">
+          <button class="search">Search</button>
+        </form>
+        <nav>
+          <ul>
+            <li><a href="index.html">Bikes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="#">Log in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </nav>
+
+      </header>
+
+      <section class="contactForm">
+        <h1>Create account</h1>
+        <form id="registration-form" action="php/register.php" method="POST">
+          <p>
+            <label>Your name</label>
+            <input required type="text" name="name" value="" id="nameField">
+            <span class="errorForm" id="nameField-error">Name shouldn't contain special characters</span>
+          </p>
+          <p>
+            <label>Email</label>
+            <input required type="email" name="email" value="" id="emailField">
+            <span class="errorForm" id="emailField-error">Invalid E-mail</span>
+
+          </p>
+          <p>
+            <label>Date of birth</label>
+            <input required type="text" name="date" value="" id="dateField" class="datePicker">
+            <span class="errorForm" id="dateField-error">Please enter the date in the format DD.MM.YYYY</span>
+          </p>
+          <p>
+            <label>Password</label>
+            <input required type="password" name="password" value="" id="passwordField">
+              <span class="errorForm" id="passwordField-error">Password should be at least 6 characters</span>
+          </p>
+          <p>
+            <label>Re-enter Password</label>
+            <input required type="password" name="re-password" value="" id="re-passwordField">
+            <span class="errorForm" id="re-passwordField-error">Passwords don't match</span>
+          </p>
+          <p>
+            <button class="full submitButton" type="submit">Create your account</button>
+          </p>
+        </form>
+
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="footerLevel1">
+    <div class="flexcontainer footerContainer">
+      <ul class="bold">
+        <li><a href="index.html">Bikes</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li>Tel: <a href="tel:+74955555555" class="call">+7 (495) 555-55-55</a></li>
+        <li>E-mail: <a href="mailto:hello@thebikes.com">hello@thebikes.com</a></li>
+        <li>108818, Moscow, Varshavskoe st, 6</li>
+      </ul>
+    </div>
+  </footer>
+
+  <footer class="footerLevel2">
+    <div class="flexcontainer footerContainer">
+      <ul class="bold">
+        <li><span>Follow us</span></li>
+      </ul>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="copyright flexcontainer">
+      <i class="far fa-copyright"></i>
+      <p>
+        All rights reserved 2019
+      </p>
+    </div>
+  </footer>
+
+  </div>
+  </div>
+
+  <!-- Dialogbox -->
+  <div id="dialog" title="Confirm Submission">
+    <p>Your account is going to be created. Please, confirm.</p>
+  </div>
+</body>
+
+</html>

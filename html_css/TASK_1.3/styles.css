@@ -1,0 +1,163 @@
+/*---------------------GLOBAL---------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*---------------------SLIDER---------------------*/
+
+.slideshow { /*Set the dimensions of slideshow box. This is a window wehre slides are shown*/
+  width: 700px;
+  height: 400px;
+  overflow: hidden; /*Hide everything that is outside the main slideshow box. We need that in order to see what is in currently in "slideshow" container*/
+
+  /*Center the slideshow box*/
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Position navigation box*/
+.navigation {
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+
+}
+
+/*Shape navigation buttons into radios*/
+.bar {
+  width: 10px;
+  border-radius: 30px;
+  height: 10px;
+  border: 2px solid #fff;
+
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+
+.bar:hover {
+  background: #fff;
+
+}
+
+/*Hide original html radios*/
+input[name="r"] {
+position: absolute;
+visibility: hidden;
+}
+
+/*Resize "slides" container into 500% - which is 5 images 100% each. Slides container is the box that containis all images. And make images in one line by flex.*/
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+/*Make each slide's size 20%. Which is 1/5 of "slides" container where each slide is in, since there are 5 images used.*/
+
+.slide {
+  position: relative;
+  width: 20%;
+  transition: 0.3s;
+}
+
+/*Make each actual image 100% of size of "slide" container. Since images are in .slide container*/
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Now when certain radio botton is checked move the first image to the left by certain degree, so that next images is shown in the "slideshow" container.*/
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+#r1:checked ~ .navigation label:nth-of-type(1) {
+  background: white;
+}
+
+#r2:checked ~ .navigation label:nth-of-type(2) {
+  background: white;
+}
+
+#r3:checked ~ .navigation label:nth-of-type(3) {
+  background: white;
+}
+
+#r4:checked ~ .navigation label:nth-of-type(4) {
+  background: white;
+}
+
+#r5:checked ~ .navigation label:nth-of-type(5) {
+  background: white;
+}
+
+/*Arrows*/
+
+.slide .arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  color: #fff;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slide .arrow:hover {
+    opacity: 1.0;
+}
+.slide .arrow.left {
+  left: 30px;
+}
+.slide .arrow.right {
+  right: 30px;
+}
+
+.text {
+  position: relative;
+  bottom: 220px;
+  text-align: center;
+  color: white;
+  padding: 0 50px 0 50px;
+
+}
+
+.text h1 {
+  font-size: 25px;
+
+}

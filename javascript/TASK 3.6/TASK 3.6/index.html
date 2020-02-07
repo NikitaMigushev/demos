@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Libs/Jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,800i&display=swap" rel="stylesheet">
+    <title>Task 3.6</title>
+</head>
+
+<body>
+    <div class="page-wrap">
+        <div class="inner-wrap">
+            <form action="" id="loginForm">
+                <ul class="flex-outer">
+                    <li>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" required>
+                        <span class="error" id="usernameError">Should be at least 3 charaters</span>
+                    </li>
+                    <li>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                        <span class="error" id="passwordError">Should be at least 6 characters with at least one uppercase and one lower case letters</span>
+                    </li>
+                    <li>
+                        <label for="confirm">Confirm pass:</label>
+                        <input type="password" id="confirm" required>
+                        <span class="error" id="confirmError">Passwords don't match</spanid="passwordError">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" required>
+                        <span class="error" id="emailError">Invalid email</spanid="confirmError">
+                    </li>
+                    <p>Preferred Lodgings</p>
+                    <ul class="flex-inner">
+                    <li>
+                        <input type="checkbox" id="fire" value="Fire Cabins" class="checks">
+                        <label for="">Fire Cabins</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="horseshoe" value="Horseshoe Cabins" class="checks">
+                        <label for="">Horseshoe Cabins</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="spurce" value="Spruce Cabins" class="checks">
+                        <label for="">Spruce Cabins</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="ursaMajor" value="Ursa Major Cabins" class="checks">
+                        <label for="">Ursa Major Cabins</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="bearMeadow" value="Bear Meadow Campground" class="checks">
+                        <label for="">Bear Meadow Campground</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="lakeside" value="Lakeside Campground" class="checks">
+                        <label for="">Lakeside Campground</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="leadfoot" value="Leadfoot Campground" class="checks">
+                        <label for="">Leadfoot Campground</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="talus" value="Talus Campground" class="checks">
+                        <label for="">Talus Campground</label>
+                    </li>
+                    </ul>
+                </ul>
+                <button type="submit" id="submitButton">Create Account</button>
+            </form>
+            <div id="accountTemplate"></div>
+        </div>
+    </div>
+
+      <script src="Libs/Jquery/Jquery.js"></script>
+      <sript src="Libs/Jqueryui/external/jquery/jquery.js"></sript>
+      <script src="Libs/Jqueryui/jquery-ui.js"></script>
+      <script src="Javascript/login.js"></script>
+</body>
+
+</html>

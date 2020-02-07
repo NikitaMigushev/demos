@@ -1,0 +1,29 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Open Sans',
+sans-serif;
+}
+
+.page-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #ECECEC;
+    margin-top: 30px;
+}
+
+.randomTags {
+    margin-bottom: 30px;
+}
+
+
+
+

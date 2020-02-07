@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Libs/Jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,800i&display=swap" rel="stylesheet">
+    <script src="Libs/Jquery/Jquery.js"></script>
+    <sript src="Libs/Jqueryui/external/jquery/jquery.js"></sript>
+    <script src="Libs/Jqueryui/jquery-ui.js"></script>
+    <script src="Javascript/code.js"></script>
+    <script src="https://kit.fontawesome.com/8e21dede71.js" crossorigin="anonymous"></script>
+    <title>Task 2.7</title>
+</head>
+
+<body>
+    <div class="page-wrap">
+
+        <div class="inner-wrap">
+            <div class="to-do">
+                <div class="to-do-headline">
+                    <h1>To-Do</h1>
+                </div>
+                <div class="to-do-tasks connectedSortable">
+                    <ul>
+                        <li class="task">Task 1
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                        <li class="task">Task 2
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                    </ul>
+                    <div class="addTaskDiv">
+                        <div class="item">
+                            <img src="images/plus.svg" alt="" class="addTaskIcon">
+                        </div>
+                        <div class="item">
+                            <span class="addTaskSpan">Add new task</span>
+                        </div>
+                    </div>
+                    <div class="textAreaDiv">
+                        <textarea name="addTask" id="addTaskArea" placeholder="Enter your task here"></textarea>
+                        <div class="addTaskButtonDiv">
+                            <div class="item">
+                                <button class="addTaskButton">Add Task</button>
+                            </div>
+                            <div class="item">
+                                <img src="images/cancel.svg" class="cancelIcon" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="in-progress">
+                <div class="in-progress-headline">
+                    <h1>In Progress</h1>
+                </div>
+                <div class="in-progress-tasks connectedSortable">
+                    <ul>
+                        <li class="task">Task 3
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                        <li class="task">Task 4
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                        <li class="task">Task 5
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="done">
+                <div class="done-headline">
+                    <h1>Done</h1>
+                </div>
+                <div class="done-tasks connectedSortable">
+                    <ul>
+                        <li class="task">Task 6
+                        <i class="far fa-trash-alt"></i>
+                        </li>
+                        <li class="task">Task 7
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                        <li class="task">Task 8
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                        <li class="task">Task 9
+                            <i class="far fa-trash-alt"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

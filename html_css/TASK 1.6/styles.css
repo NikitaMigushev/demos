@@ -1,0 +1,104 @@
+/*GLOBAL*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: white;
+}
+
+/*Center the task box*/
+
+.middle {
+  display: grid;
+  grid-template-columns: 320px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Make the Headline of the task box*/
+
+div.headline {
+  background: linear-gradient(0deg, rgba(217, 217, 217, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  border: 1px solid lightgrey;
+  margin-bottom: -1px;
+}
+
+div.headline h2 {
+  margin-left: 20px;
+  color: #5F7087;
+}
+
+/*Adjust width of the task list*/
+
+.task-list {
+  width: 320px;
+  background: #FFFFFF;
+}
+
+.task-list h2 {
+  color: #8B9A9C;
+}
+
+/*Flexstuff of the task items*/
+
+.task {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*Hide checkboxes. Checkboxes are neede to toggle on/of tasks*/
+
+.task input {
+  position: absolute;
+  visibility: hidden;
+}
+
+/*Position checkmark and border circle around it*/
+
+.task i {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #BAC3C4;
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  margin-right: 14px;
+  color: transparent;
+  margin-left: 20px;
+}
+
+/*Style text of the tasks*/
+
+.text {
+  font-size: 18px;
+  color: #8B9A9C;
+  font-weight: bold;
+}
+
+/*When checkbox is on - style the task*/
+
+.task input:checked~i {
+  color: #3CC070;
+  border: 1px solid #3CC070;
+}
+
+.task input:checked~.text {
+  text-decoration: line-through;
+  color: #3CC070;
+}
+
+/*Border task item*/
+
+.taskitem {
+  border: 1px solid lightgrey;
+}

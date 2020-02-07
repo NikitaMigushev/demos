@@ -1,0 +1,96 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(192, 225, 253);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-wrap {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 95%;
+}
+
+.inner-wrap {
+    margin: 0 auto;
+}
+
+/*Trash Area*/
+
+.trashArea {
+    width: 600px;
+    height: 200px;
+    border: 3px solid white;
+    position: relative;
+    /*Position relative for vertical aligning of .bin and .trashAreaConcent*/
+}
+
+.bin {
+    height: 45px;
+    width: 45px;
+    margin-left: 12px;
+}
+
+.trashAreaContent p {
+    margin-left: 12px;
+}
+
+.trashAreaContent {
+    display: flex;
+    /*Center div vertically*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Images Area*/
+
+div.images {
+    margin-top: 10px;
+}
+
+.images img {
+    width: 147px;
+    cursor: move;
+}
+
+/*Highlight droppable area and hover*/
+
+.highlight {
+    background-color: rgb(255, 255, 163);
+}
+
+/*Hide images when dropped*/
+
+.hide {
+    display: none;
+}
+
+/*Adjust size of the delete-animation-show box*/
+
+.delete-animation-show {
+    position: absolute;
+    top: -30px;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+}
+
+/*Make delete-animation*/
+
+.delete-animation {
+    width: 130px;
+    height: 700px;
+    margin: 0 auto;
+    background: url('../images/epuff.png') no-repeat;
+    animation: play .3s steps(5);
+}
+
+@keyframes play {
+    100% {
+        background-position: 0 -650px;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Styles/normalize.css">
+    <link rel="stylesheet" href="Libs/Jqueryui/jquery-ui.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,800i&display=swap" rel="stylesheet">
+    <title>Task 3.5</title>
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="inner-wrap">
+            <div class="search">
+                <input type="text" id="searchBar" placeholder="Search city">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div class="currentWeather">
+                <div class="weatherinCity">
+                    <h1>Weather in<span class="cityName"></span></h1>
+                </div>
+                <div class="flex-container">
+                    <img src="" alt="" id="currentWeatherIcon">
+                    <h1><span id="temp"></span></h1>
+            </div>
+                <div>
+                    <span id="date"></span>
+                </div>
+                <div>
+                    <table class="content-table">
+                        <tr>
+                            <td>
+                                Wind
+                            </td>
+                            <td id="wind"></td>
+                        </tr>
+                        <tr>
+                            <td>Cloudness</td>
+                            <td id="cloudness"></td>
+                        </tr>
+                        <tr>
+                            <td>Pressure</td>
+                            <td id="pressure"></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity</td>
+                            <td id="humidity"></td>
+                        </tr>
+                        <tr>
+                            <td>Sunrise</td>
+                            <td id="sunrise"></td>
+                        </tr>
+                        <tr>
+                            <td>Sunset</td>
+                            <td id="sunset"></td>
+                        </tr>
+                        <tr>
+                            <td>Geo</td>
+                            <td id="geo"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="forecast">
+                <div class="weatherinCity">
+                    <h1>Hourly weather and forecast in <span class="cityName"></span></h1>
+                </div>
+                <table id="forecast-table" class="content-table">
+                    <tbody>
+                        <th colspan="2" id="firstThForecast"></th>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="Libs/Jquery/Jquery.js"></script>
+    <sript src="Libs/Jqueryui/external/jquery/jquery.js"></sript>
+    <script src="Libs/Jqueryui/jquery-ui.js"></script>
+    <script src="Javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/*GLOBAL*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Open Sans',
+sans-serif;
+}
+
+.page-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexContainer > .flexitem:not(:first-child) {
+    margin-top: 20px;
+}
+
+.flexrow {
+    display: flex;
+}
+
+.button {
+    width: 120px;
+     background-color: #39A1F4;
+     color: white;
+     border: 0;
+     padding: 10px;
+     cursor: pointer;
+}
+
+.button:active {
+    background-color: rgb(44, 127, 194);
+}
+
+.button-mod {
+    background-color: #2ECC40;
+
+}
+
+.button-mod:active {
+    background-color: rgb(31, 146, 45);
+}
+
+.userForm {
+    margin-bottom: 40px;
+   
+}
+
+.productForm {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+

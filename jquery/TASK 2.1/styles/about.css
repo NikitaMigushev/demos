@@ -1,0 +1,81 @@
+/*GLOVAL*/
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/*MAIN PICTURE*/
+.mainPictureHeadline {
+  position: relative;
+  color: #f7f5f5;
+  font-size: 2.8vw;
+  font-weight: 700;
+  letter-spacing: 3.84px;
+  width: 30vw;
+  text-align: left;
+  position: absolute;
+  top: 230px;
+  right: 3px;
+  margin-right: -40px;
+}
+
+/*OUR STORY*/
+.ourStorySection {
+  margin-top: 60px;
+}
+
+div.ourStory {
+  margin: 15px 10px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  box-shadow: 0 5px 19px rgba(0, 0, 0, .15);
+}
+
+div.ourStory {
+  max-width: 900px;
+}
+
+div.ourStory h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+div.ourStory p {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.96px;
+}
+
+div.ourStory {
+  margin: auto;
+}
+
+/*LOCATION*/
+section.location {
+  margin-top: 30px;
+}
+
+section.location h1 {
+  margin-bottom: 30px;
+}
+
+#map {
+  height: 250px;
+  width: 100%;
+  margin: auto;
+}
+
+div.address ul li {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+div.address ul li a {
+  color: black;
+}
+
+div.address ul li a:hover {
+  color: orange;
+}

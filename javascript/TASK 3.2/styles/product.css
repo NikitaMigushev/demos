@@ -1,0 +1,120 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 45% 16.55%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 25px;
+    padding-left: 100px;
+    grid-template-areas:
+        "product-image description summery"
+        "fulldescription fulldescription summery";
+}
+
+body {
+    background: white;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.12px;
+}
+
+
+.productImage {
+    grid-area: product-image;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    display: block;
+}
+
+.product-Description {
+    grid-area: description;
+
+}
+
+.product-Description .strikethrough {
+    text-decoration: line-through;
+}
+
+.priceBold {
+    font-weight: bold;
+}
+
+.product-Description ul li {
+    list-style: square;
+    padding: 10px;
+}
+
+.productSummery {
+    background-color: #fafafa;
+    grid-area: summery;
+
+}
+
+.productSummery .content {
+    padding: 10px;
+}
+
+.productSummery h2 {
+    font-weight: normal;
+}
+
+.productSummery img {
+    width: 40%;
+}
+
+.productSummery .productSummeryName {
+    font-size: 10px;
+}
+
+.productSummeryName {
+    color: #000000;
+    width: 55%;
+    margin-left: 10px;
+}
+
+.productSummeryName h3 {
+    font-weight: normal;
+}
+
+.productSummery .productPrice {
+    margin-top: 20px;
+}
+.productSummery .productPrice p {
+    margin-top: 20px;
+
+}
+
+.productFullDescription {
+    grid-area: fulldescription;
+
+}
+
+.productPrice p {
+    margin: 0;
+}
+
+.checkoutButton {
+    color: black;
+    background-color: #febd69;
+     border: none;
+     border-radius: 5px;
+     padding: 10px 32px;
+     text-align: center;
+     text-decoration: none;
+     font-weight: bold;
+     display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+     cursor: pointer;
+}
+
+.checkoutButton:hover {
+    color: black;
+    background-color: #fcd096;
+}
