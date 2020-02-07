@@ -36,8 +36,6 @@ function ioTopCallback(entry, observer) {
 
 const ioTopOptions = {
     root: null,
-    rootMargin: '',
-    threshold: ''
 };
 
 const obseverTop = new IntersectionObserver(ioTopCallback, ioTopOptions);
@@ -73,8 +71,6 @@ function ioBotttomCallback(entry, observer) {
 
 const ioBottomOptions = {
     root: null,
-    rootMargin: '',
-    threshold: ''
 };
 
 const obseverBottom = new IntersectionObserver(ioBotttomCallback, ioBottomOptions);
