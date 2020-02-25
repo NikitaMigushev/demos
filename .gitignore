@@ -1,1 +1,2 @@
-gitignore\
+# Ignore folder named 'no_git'
+no_git/
