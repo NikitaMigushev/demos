@@ -6,12 +6,12 @@ const types = {
   e: 11,
   f: 9007199254740991n,
   g: 1n,
-  h: "hello",
+  h: 'hello',
   // i: Symbol("id"),
   j: {},
   k: NaN,
-  l: ""
-}
+  l: ''
+};
 
 let table = document.createElement('table');
 document.body.appendChild(table);
@@ -20,33 +20,31 @@ let tableInnerHtml = `
   <thead>
     <tr>
     <th>Variable</th>
-    <th>Variable</th>
+    <th>Value</th>
     <th>typeof</th>
     <th>Boolean</th>
     <th>Number</th>
     </tr>
   </thead>
   <tbody>
-  `
-
+  `;
 
 for (let property in types) {
-  tableInnerHtml +=
-    `
+  tableInnerHtml += `
     <tr>
       <td>${property}</td>
       <td>${types[property]}</td>
-      <td>${typeof(types[property])}</td>
+      <td>${typeof types[property]}</td>
       <td>${Boolean(types[property])}</td>
       <td>${Number(types[property])}</td>
     </tr>
-    `
+    `;
 }
 
 tableInnerHtml += `
   </tbody>
   </table>
-`
+`;
 table.innerHTML = tableInnerHtml;
 
 let style = document.createElement('style');
@@ -68,4 +66,4 @@ style.innerHTML = `
   th {
     background-color: #bddcfc;
   }
-`
+`;
