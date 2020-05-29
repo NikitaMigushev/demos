@@ -10,7 +10,8 @@ const types = {
   // i: Symbol("id"),
   j: {},
   k: NaN,
-  l: ''
+  l: '',
+  m: -78 % 33
 };
 
 let table = document.createElement('table');
@@ -67,3 +68,18 @@ style.innerHTML = `
     background-color: #bddcfc;
   }
 `;
+
+
+console.log('**************');
+
+var person = {
+  age: 0
+}
+
+console.log(person);
+
+for (i = 1000000000000; i > 0; i--) {
+  person.age = person.age + 1
+}
+
+console.log(person);

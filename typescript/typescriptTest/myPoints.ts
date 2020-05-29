@@ -10,3 +10,9 @@ class MyPoint {
     //посчитать и вернуть расстояние
   }
 }
+
+let myPoint = new MyPoint() //MyPoint - это имя класса
+myPoint.x = 2;              //устанавливаем свойство x 
+myPoint.y = "a";            //устанавливаем свойство y
+
+myPoint.draw();             //вызываем метод draw
